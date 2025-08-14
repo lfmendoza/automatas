@@ -1,0 +1,27 @@
+Problema 2 — No regularidad de A = { yy | y ∈ {0,1}* } mediante Lema de Bombeo
+
+Demostraremos por contradicción usando el Lema de Bombeo para lenguajes regulares.
+
+Supongamos, para buscar contradicción, que A es regular. Entonces existe una longitud de bombeo p ≥ 1
+tal que toda cadena s ∈ A con |s| ≥ p puede escribirse como s = xyz, cumpliendo:
+  1) |xy| ≤ p
+  2) |y| ≥ 1
+  3) ∀ i ≥ 0, x y^i z ∈ A
+
+Elegimos la cadena:
+  s = 0^p 1 0^p 1
+Nótese que s ∈ A porque s = yy, donde y = 0^p 1.
+
+Ahora, por (1), el prefijo xy está completamente dentro del bloque inicial de 0's (ya que |xy| ≤ p).
+En consecuencia, y solo contiene 0's y |y| ≥ 1.
+
+Consideremos i = 0. Entonces la cadena bombeada es:
+  s' = x y^0 z = x z
+Esto elimina al menos un 0 del primer bloque de 0's, de modo que s' = 0^{p - |y|} 1 0^p 1.
+
+Para que una cadena pertenezca a A, debe ser de la forma ww (dos mitades idénticas).
+Pero en s', la primera mitad sería 0^{p - |y|} 1 y la segunda mitad 0^p 1, que son diferentes porque |y| ≥ 1.
+Por lo tanto, s' ∉ A.
+
+Esto contradice la condición (3) del Lema de Bombeo. Luego, nuestra suposición de que A es regular es falsa.
+Concluimos que A no es un lenguaje regular.
