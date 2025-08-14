@@ -48,7 +48,7 @@ automatas/
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/automatas/automatas.git
+git clone https://github.com/lfmendoza/automatas.git
 cd automatas
 
 # Crear entorno virtual (recomendado)
@@ -66,7 +66,7 @@ make install-dev
 
 ```bash
 # Instalar directamente
-pip install git+https://github.com/automatas/automatas.git
+pip install git+https://github.com/lfmendoza/automatas.git
 ```
 
 ## 🚀 Uso Rápido
