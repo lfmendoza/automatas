@@ -6,6 +6,10 @@
 
 Este proyecto implementa la construcción y simulación de autómatas finitos no deterministas (NFA) usando el algoritmo de Thompson a partir de expresiones regulares, siguiendo principios de ingeniería de software de empresas tecnológicas grandes.
 
+## Video explicativo demo
+
+[![https://youtu.be/dkTd5cUQ1Sw](https://youtu.be/dkTd5cUQ1Sw)](https://youtu.be/dkTd5cUQ1Sw)
+
 ## 🚀 Características
 
 - **Algoritmo de Thompson**: Construcción eficiente de NFA desde expresiones regulares
@@ -194,6 +198,7 @@ pre-commit run --all-files
 ### Archivos SVG Generados
 
 El programa genera diagramas SVG para cada expresión regular:
+
 - `afn_01.svg` - Primera expresión regular
 - `afn_02.svg` - Segunda expresión regular
 - etc.
@@ -222,6 +227,7 @@ export PYTHONIOENCODING=utf-8
 ### Configuración de IDE
 
 El proyecto incluye configuraciones para:
+
 - **VS Code**: Configuración automática de Python, testing y linting
 - **PyCharm**: Configuración de proyecto y testing
 - **Vim/Neovim**: Configuración de LSP y formateo
